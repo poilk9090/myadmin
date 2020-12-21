@@ -129,6 +129,10 @@ export default {
 };
 </script>
 <style  scoped>
+* {
+  margin: 0;
+  padding: 0;
+}
 .app-login {
   height: 100vh;
   background: #2174bc;
