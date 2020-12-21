@@ -1,6 +1,6 @@
 <!-- 登录页面 -->
 <template>
-  <div class="">
+  <div class="app-login">
     <div class="login-box">
       <div class="login-img">
         <h1>
@@ -129,11 +129,7 @@ export default {
 };
 </script>
 <style  scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-#app {
+.app-login {
   height: 100vh;
   background: #2174bc;
   overflow: hidden;

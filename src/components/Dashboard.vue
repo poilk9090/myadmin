@@ -1,7 +1,31 @@
 <!--  -->
 <template>
-<div class=''>
-    <h3>页面</h3>
+<div class='myadmin-dashboard'>
+    <el-row>
+        <el-col :span='4' >
+            <el-menu :style="{backgroundColor:'#F9F9F9'}" text-color='#fff'  active-text-color='#29DB6F' background-color='#3A3F4A'>
+                <el-menu-item index='dasboard'>
+                    <i class="el-icon-s-home"></i>
+                    <span slot="title">系统首页</span>
+                </el-menu-item>
+                <!-- 产品管理开始 -->
+                <el-submenu :index="">
+                    <template slot="title">
+                        <i class="el-icon-s-platform"></i>
+                        <span>产品管理</span>
+                    </template>
+                    <el-menu-item v-for="(item, subIndex) in "
+                        :index="subIndex + 1"
+                        :key="item.key">
+                            {{item.title}}
+                    </el-menu-item>
+                </el-submenu>
+                
+                <!-- 产品管理结束 -->
+            </el-menu>
+        </el-col>
+        <el-col :span='20'></el-col>
+    </el-row>
 </div>
 </template>
 
